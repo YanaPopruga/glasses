@@ -12,9 +12,8 @@ body {
 
 /*001/010*/
 .header, .menu {
-    background-color: #0F0F0F;
-    /* задала цвет фона */
-    display: flex;
+    display: inline;
+    /* задала строчный вид элементам меню и хидеру */
 }
 
 /*001/010/010*/
@@ -95,7 +94,7 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 
 /*010*/
 .logo {
-    flex-direction:column;
+    flex-direction: column;
     /* задала логотипу обтекание по правой стороне */
     width: 40px;
     /* задала ширину логотипу */
