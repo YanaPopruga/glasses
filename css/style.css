@@ -4,8 +4,8 @@ body {
     /* задала стиль шрифта */
 }
 
-/*010/010/001*/
-.header__block, .marquee-container, body {
+/*010/010/001/001/010/010*/
+.header__block, .marquee-container, body, .dropdown__item, .nav__item {
     background-color: #000000;
     /* задала цвет фона */
 }
@@ -14,12 +14,6 @@ body {
 .header, .menu {
     display: inline;
     /* задала строчный вид элементам меню и хидеру */
-}
-
-/*001/010/010*/
-footer, .dropdown__item, .nav__item {
-    background-color: #1F1F1F;
-    /* задала цвет фона */
 }
 
 /*001/010*/
@@ -64,6 +58,7 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
     /* задала ширину */
     display: flex;
     /* закрепила хидер */
+    background-color: #1F1F1F;
 }
 
 /*010*/
@@ -96,9 +91,9 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 .logo {
     flex-direction: column;
     /* задала логотипу обтекание по правой стороне */
-    width: 40px;
+    width: 58px;
     /* задала ширину логотипу */
-    margin: 5px;
+    margin: 0;
     /* задала внешний отступ */
 }
 
@@ -115,7 +110,7 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 .nav__item {
     width: 150px;
     /* задала ширину лишке */
-    border: 1px solid #0F0F0F;
+    border: 1px solid #1F1F1F;
     /* задала параметры для границы лишкам */
     font-size: .9375rem;
     /* вернула размер лишкам */
@@ -131,8 +126,10 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 
 /*010*/
 .nav__link, .dropdown__link {
-    padding: 15px 30px;
+    padding: 15px 0;
     /* отцентрировала ссылки */
+    width: 150px;
+    /* задала ширину li-шкам и вложенным li-шкам меню */
 }
 
 /*010*/
@@ -147,7 +144,6 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 .dropdown__link {
     border-top: 1px solid #0F0F0F;
     /* задала верхнюю границу при наведении */
-    width: 150px;
 }
 
 /********** Логотип **********/
@@ -325,4 +321,6 @@ img.card__img:hover {
     font: .75rem Arial;
     /* задала стили для текста */
     clear: both;
-}   /* для отмены обтекания */
+    /* для отмены обтекания */
+    background-color: #1F1F1F;
+}
