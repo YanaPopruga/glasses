@@ -4,8 +4,8 @@ body {
     /* задала стиль шрифта */
 }
 
-/*010/010/001/001/010/010*/
-.header__block, .marquee-container, body, .dropdown__item, .nav__item {
+/*010/001*/
+.marquee-container, body {
     background-color: #000000;
     /* задала цвет фона */
 }
@@ -14,9 +14,10 @@ body {
 .header, .menu {
     display: inline;
     /* задала строчный вид элементам меню и хидеру */
+    background-color: #1F1F1F;
 }
 
-/*001/010*/
+/*001/010/010/010/010/010*/
 body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
     color: #DCDCDC;
     /* задала цвет тексту */
@@ -40,12 +41,19 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
     /* задала блочный вид для элементов */
 }
 
-/*010*/
+/*010/010/010*/
 .nav__link, .dropdown__link, .card__btn {
     text-decoration: none;
     /* отменила подчеркивание текста */
 }
 
+/*010/010*/
+.nav__item, .dropdown__item {
+    background-color: #2e2d2d;
+    /* задала фон li-шкам */
+}
+
+/*010/010*/
 .marquee-container, .card__img {
     overflow: hidden;
     /* зафиксировала изображение в карточке */
@@ -58,7 +66,6 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
     /* задала ширину */
     display: flex;
     /* закрепила хидер */
-    background-color: #1F1F1F;
 }
 
 /*010*/
@@ -91,7 +98,7 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 .logo {
     flex-direction: column;
     /* задала логотипу обтекание по правой стороне */
-    width: 58px;
+    width: 56px;
     /* задала ширину логотипу */
     margin: 0;
     /* задала внешний отступ */
@@ -102,15 +109,17 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 .nav {
     font-size: 0;
     /* убираю пробелы между li-шками, образованные от inline-block */
-    margin-left: 60%;
+    margin-left: 50%;
     /* задала выравнивание по правой стороне */
+    margin-right: 10%;
+    /* задала выравнивание по левой стороне */
 }
 
 /*010*/
 .nav__item {
     width: 150px;
     /* задала ширину лишке */
-    border: 1px solid #1F1F1F;
+    border-left: 1px solid #1F1F1F;
     /* задала параметры для границы лишкам */
     font-size: .9375rem;
     /* вернула размер лишкам */
