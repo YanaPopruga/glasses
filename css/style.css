@@ -10,21 +10,14 @@ body {
     /* задала цвет фона */
 }
 
-/*001/010*/
-.social, .menu {
-    display: inline;
-    /* задала строчный вид элементам меню и хидеру */
-    background-color: #1F1F1F;
-}
-
 /*001/010/010/010/010/010*/
 body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
     color: #DCDCDC;
     /* задала цвет тексту */
 }
 
-/*010/010/001*/
-.menu, .card__title, footer {
+/*010/010/010*/
+.menu, .card__title, .footer {
     text-align: center;
     /* разместила текст по центру */
 }
@@ -48,17 +41,10 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 }
 
 /*010/010*/
-.nav__item, .dropdown__item {
-    background-color: #2e2d2d;
-    /* задала фон li-шкам */
-}
-
-/*010/010*/
 .marquee-container, .card__img {
     overflow: hidden;
     /* зафиксировала изображение в карточке */
 }
-
 
 /*010*/
 .logo {
@@ -75,20 +61,18 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
 .nav {
     font-size: 0;
     /* убираю пробелы между li-шками, образованные от inline-block */
-    margin: .5% 10% 0 45%;
+    margin: 0 10% 0 45%;
 }
 
 /*010*/
 .nav__item {
     width: 150px;
     /* задала ширину лишке */
-    border-left: 1px solid #1F1F1F;
-    /* задала параметры для границы лишкам */
-    font-size: .9375rem;
+    font-size: 1rem;
     /* вернула размер лишкам */
 }
 
-/*020*/
+/*020/020/020*/
 .nav__link:hover, .dropdown__link:hover, .card__btn:hover {
     transition: .6s linear;
     /* задала критерии прозрачности при наведении */
@@ -96,7 +80,7 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
     /* задала фон при наведении */
 }
 
-/*010*/
+/*010/010*/
 .nav__link, .dropdown__link {
     padding: 15px 0;
     /* отцентрировала ссылки */
@@ -112,7 +96,13 @@ body, .card__title, .nav__link, .dropdown__link, .card__btn, .marquee {
     /* скрыла доп. список для просмотра */
 }
 
-/* 010 */
+/*010*/
+.dropdown__item {
+    background-color: #000000;
+    /* задала фон li-шкам */
+}
+
+/*010*/
 .dropdown__link {
     border-top: 1px solid #0F0F0F;
     /* задала верхнюю границу при наведении */
@@ -283,14 +273,22 @@ img.card__img:hover {
     /* сформировала углы для кнопки*/
 }
 
-/********** Персональная информация **********/
+/********** Социальная информация **********/
+/*010*/
+.social {
+    display: inline;
+    /* задала строчный вид элемента */
+    background-color: #1F1F1F;
+    /* задала цвет фона */
+}
+
 /*010*/
 .social__block {
     width: 100%;
     /* задала ширину */
 }
 
-/*010*/
+/*010/010*/
 .site__item, .nav__item {
     position: relative;
     /* задала относительное позиционирование */
@@ -304,14 +302,14 @@ img.card__img:hover {
 
 /*010*/
 .site__img {
-    width: 30px;
+    width: 25px;
     /*задала ширину для иконки */
-    padding: 8px 3px;
-    /* задала центрирование иконки */
+    padding: 3px;
+    /* задала центрирование иконки внутри футера */
 }
 
 /********** Информация об авторских правах **********/
-/*001*/
+/*010*/
 .footer {
     margin-top: 7%;
     /* задала футеру интервал между контентом */
@@ -322,4 +320,5 @@ img.card__img:hover {
     clear: both;
     /* для отмены обтекания */
     background-color: #1F1F1F;
+    /* Задала фон для футера */
 }
